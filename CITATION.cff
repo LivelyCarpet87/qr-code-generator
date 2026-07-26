@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: >-
+  QR Studio: a privacy-respecting client-side QR code generator
+message: 'If you use this work, please cite it as below.'
+type: software
+authors:
+  - given-names: Omar
+    family-names: Choudhry
+    affiliation: School of Computing, University of Leeds
+    website: 'https://omarchoudhry.co.uk'
+repository-code: 'https://github.com/omariosc/qr-code-generator'
+url: 'https://github.com/omariosc/qr-code-generator'
+abstract: >-
+  A fully client-side QR code generator with extensive styling: gradients, dot and corner shapes, logo embedding and adjustable error correction, exporting to PNG, SVG, JPEG or WebP. No server, no tracking, no signup and no API limits; the page runs directly from the filesystem.
+keywords:
+  - qr-code
+  - generator
+  - client-side
+  - privacy
+  - javascript
+  - static-site
+license: MIT

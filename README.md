@@ -2,6 +2,12 @@
 
 A privacy-respecting, fully client-side QR code generator with extensive styling options. No tracking, no API limits, no signup — open it and create.
 
+[![Live demo](https://img.shields.io/badge/Live%20demo-QR%20Studio-0057B8?style=flat-square)](https://omariosc.github.io/qr-code-generator/)
+![Client-side](https://img.shields.io/badge/Client--side-no%20server,%20no%20tracking-009639?style=flat-square)
+![Build step](https://img.shields.io/badge/Build%20step-none-informational?style=flat-square)
+![Exports](https://img.shields.io/badge/Exports-PNG%20%7C%20SVG%20%7C%20JPEG%20%7C%20WebP-8a4fff?style=flat-square)
+[![Licence](https://img.shields.io/badge/Licence-MIT-green?style=flat-square)](LICENSE)
+
 **[Live demo →](https://omariosc.github.io/qr-code-generator/)**
 
 ## Features
