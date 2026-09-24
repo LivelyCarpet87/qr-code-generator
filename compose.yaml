@@ -20,8 +20,6 @@ services:
 
     tmpfs:
       - /tmp:rw,noexec,nosuid,nodev,size=16m
-      - /var/cache/nginx:rw,noexec,nosuid,nodev,size=16m
-      - /var/run:rw,noexec,nosuid,nodev,size=1m
 
     mem_limit: 128m
     cpus: "0.50"
