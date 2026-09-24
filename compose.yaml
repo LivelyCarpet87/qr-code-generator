@@ -5,29 +5,24 @@ services:
       dockerfile: Dockerfile
 
     container_name: qr-generator
-
     restart: unless-stopped
 
     ports:
       - "0.0.0.0:18473:8080"
 
-    # The application is completely static.
-    # It has no reason to write to its filesystem.
     read_only: true
 
-    # nginx doesn't need Linux capabilities.
     cap_drop:
       - ALL
 
-    # Prevent privilege escalation.
     security_opt:
       - no-new-privileges:true
 
-    # Writable temporary filesystem for nginx.
     tmpfs:
       - /tmp:rw,noexec,nosuid,nodev,size=16m
+      - /var/cache/nginx:rw,noexec,nosuid,nodev,size=16m
+      - /var/run:rw,noexec,nosuid,nodev,size=1m
 
-    # Resource limits.
     mem_limit: 128m
     cpus: "0.50"
     pids_limit: 50
