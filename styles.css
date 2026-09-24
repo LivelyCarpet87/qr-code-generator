@@ -213,7 +213,11 @@ html, body {
 }
 
 @media (max-width: 960px) {
-  .controls { max-height: none; }
+  .controls {
+    max-height: none;
+    overflow: visible;
+    overscroll-behavior: auto;
+  }
 }
 
 .controls::-webkit-scrollbar { width: 10px; }
