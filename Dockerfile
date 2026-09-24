@@ -1,15 +1,10 @@
 FROM nginx:1.29-alpine
 
-# Remove nginx's default site.
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy the upstream application as-is.
 COPY . /usr/share/nginx/html/
+COPY nginx.conf /etc/nginx/nginx.conf
 
-# Replace the default nginx configuration.
-COPY docker/nginx.conf /etc/nginx/nginx.conf
-
-# nginx needs these writable locations when running unprivileged.
 RUN mkdir -p /tmp/nginx/client_temp \
              /tmp/nginx/proxy_temp \
              /tmp/nginx/fastcgi_temp \
