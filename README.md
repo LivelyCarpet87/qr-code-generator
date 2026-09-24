@@ -26,15 +26,16 @@ A privacy-respecting, fully client-side QR code generator with extensive styling
 - Export as **PNG, SVG, JPEG, or WebP**
 - Liquid-glass UI with automatic light/dark mode
 
-## Run locally
+## Run
 
 Two options:
 
 1. Double-click `index.html` — it works directly in your browser (no build step).
-2. Serve the folder, e.g.:
+2. Serve the folder using Docker/Nginx
    ```bash
-   python3 -m http.server 8000
-   # then open http://localhost:8000
+   docker compose build
+   docker compose up -d
+   # then open http://localhost:18473
    ```
 
 The two QR libraries are loaded from jsDelivr. For fully offline use, download `qrcode.min.js` and `qr-code-styling.js` from jsDelivr and replace the CDN URLs in the `<script>` tags of `index.html`.
