@@ -5,7 +5,6 @@
 Dockerfile
 compose.yaml
 .dockerignore
-docker/
 
 README.md
 LICENSE
